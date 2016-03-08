@@ -1,0 +1,49 @@
+{
+     
+     "tabs":[
+           "BANK",
+           "UTILITY",
+           "FREQUENT",
+           "OTHER"
+     
+     ],
+     
+     "sectionHeaders": [
+     	   "知乎收藏",
+     	   "Technical Blogs"
+     
+     ],
+     
+    
+     
+     "banks": [
+            {"name": "Bank of America",
+          "url": "https://secure.bankofamerica.com/login/sign-in/signOn.go"},
+         {"name": "Chase bank online",
+          "url": "https://chaseonline.chase.com/Logon.aspx"}
+     ],
+      
+      "utilities": [
+                
+        	     {"name": "Sample utility website",
+         	 	"url": "http://google.com"}
+              	
+     ]
+     ,
+      
+      "others": [
+                 {"name": "Sample other website",
+               "url": "http://google.com"}
+              	
+     ]
+     ,
+      
+      "frequents": [
+                 {"name": "Your frequent visit websites",
+               "url": "http://www.google.com"}
+              	
+     ]
+     
+     
+
+}

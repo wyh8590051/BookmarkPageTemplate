@@ -1,0 +1,179 @@
+/**
+ * Author:          YUHUAI WU
+ * Contact:          
+ */
+ 
+ .main{
+ 	margin-left:30%;
+ 	float: left;
+ 	width:70%;
+ }
+ #header{
+ 	/* background-color: black; */
+ 	color: white;
+ 	text-align:center;
+ 	padding:5px;
+ }
+ 
+ #nav{
+ 	line-height:30px;
+ 	/* background-color: lightgrey; */
+ 	height: 50px;
+ 	width:100%;
+ 	float: left;
+ 	padding:5px;
+ }
+ 
+ #section{
+ 	width:70%;
+ 	height:1000px;
+ 	float: left;
+ 	padding:10px;
+ 	margin-left:10%;
+ 	margin-right:10%;
+ 	
+ }
+ 
+ #footer{
+ 	background-color: black;
+ 	color: white;
+ 	clear: both;
+ 	text-align:center;
+ 	padding:5px;
+ 	margin-left:10%;
+ 	marigin-bottom:0px;
+ 	width: 70%;
+ }
+ 
+ .subsection{
+ 	/* border-style:solid;
+ 	border-color: grey; */
+ 	width:100%;
+ 	height:auto;
+ 	margin-top:50px;
+ }
+ #subsection{
+	 margin-left:20px;
+	 color: blue;
+ }
+ 
+ .thought{
+ 	/* border-style:solid;
+ 	border-color: grey; */
+ 	width:100%;
+ 	height:auto;
+ 	margin-top:20px;
+ }
+ #thought{
+	 margin-left:10px;
+ }
+ 
+ .navBar{
+ 	width:100%; 
+ 	margin:0 auto;
+ 	margin-left:5%;
+ /* 	position: fixed; */
+ }
+ 
+ .navBar li{
+  	display:inline-block; 
+  	*float:left; 
+  	zoom:1; 
+  	font-size:18px; 
+  	width:20%; 
+  	cursor:pointer; 
+ }
+ .navBar li a,
+ .navBar li a:visited { 
+ 	display:inline-block; 
+ 	zoom:1; 
+ 	color:#000; 
+ 	width:100%; }
+ .navBar li a:hover { 
+ 	text-decoration:none; 
+ 	color: blue;
+}
+ .on{ 
+    text-decoration:none; 
+ 	color:red; 
+ 	
+}
+ .cate-bar { 
+ 	height:3px; 
+ 	margin:0 auto;
+ 	margin-bottom:100px;
+}
+ #cate-bar{
+ 	display:inline-block; 
+ 	zoom:1; 
+ 	height:3px; 
+ 	background:red; 
+ 	position:relative; 
+ 	width:0;
+ }
+ 
+ .center{
+ 	text-align: center;
+ }
+ 
+ .right{
+  text-aglin: right;
+ }
+ 
+ body{
+ font-family: "Î¢ÈíÑÅºÚ","Arial","Helvetica","sans-serif";
+ }
+ .aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    max-width: 500px;
+    background:#000;
+    box-shadow:inset -1px 0 0 rgba(0,0,0,0.3);
+    background-size:cover;
+    background-position:50% 50%;
+    /* background-image:url(captain-jack-sparrow_12.jpg); */
+}
+
+.bankbg{
+	background-image:url(../img/bank.jpg);
+}
+.utilitybg{
+	background-image:url(../img/night.png);
+}
+.frequentbg{
+	background-image:url(../img/lufei.jpg);
+}
+.otherbg{
+	background-image:url(../img/view.JPG);
+}
+
+a{
+	line-height:30px;
+	text-decoration:none; 
+ 	
+}
+a:hover{
+	color: blue;
+}
+
+.mf{
+	background: lightpink;
+}
+
+h3{
+	/* color: blue; */ 
+	text-align: left; 
+	font-size: 20px;
+}
+ 
+ p{
+  margin-left:10px;
+ }
+ 
+ .indent{
+ text-indent: 10px;
+ }
+ 

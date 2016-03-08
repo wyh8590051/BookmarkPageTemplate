@@ -1,0 +1,94 @@
+<html data-ng-app="gpsApp">
+<head>
+<title>SiteGPS</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body data-ng-controller="gpsCtrl">
+	<script
+		src="script/angular.min.js"></script>
+	<script src="script/controller.js"></script>
+	<script src="script/xml2json.min.js"></script>
+	<script src="script/angular-xml.min.js"></script>
+	<script src="script/angular-xml.js"></script>
+
+	<div data-ng-show="isBank" class="aside bankbg"></div>
+	<div data-ng-show="isUtility" class="aside utilitybg"></div>
+	<div data-ng-show="isFrequent" class="aside frequentbg"></div>
+	<div data-ng-show="isOther" class="aside otherbg"></div>
+	<div class="main">
+		<div id="header">
+			<!-- <h1 style="color: blue"">ROOKIE'S PLACE</h1> -->
+		</div>
+
+		<div id="nav">
+			<ul class="navBar">
+				<li data-ng-click="switchToBank()"><span data-ng-show="isBank"
+					class="on">{{data.tabs[0]}}</span><a data-ng-show="!isBank">{{data.tabs[0]}}</a></li>
+				<li data-ng-click="swtichToThought()"><span
+					data-ng-show="isUtility" class="on">{{data.tabs[1]}}</span><a
+					data-ng-show="!isUtility">{{data.tabs[1]}}</a></li>
+				<li data-ng-click="switchToFrequent()"><span
+					data-ng-show="isFrequent" class="on">{{data.tabs[2]}}</span><a
+					data-ng-show="!isFrequent">{{data.tabs[2]}}</a></li>
+				<li data-ng-click="switchToOther()"><span
+					data-ng-show="isOther" class="on">{{data.tabs[3]}}</span><a
+					data-ng-show="!isOther">{{data.tabs[3]}}</a></li>
+
+			</ul>
+			<div class="cate-bar">
+				<span id="cate-bar"></span>
+			</div>
+
+		</div>
+
+		<div id="section">
+			<div data-ng-show="isBank">
+
+				<div class="subsection">
+					<!-- <h3 id="subsection">{{data.sectionHeaders[0]}}</h3> -->
+					<ul>
+						<li data-ng-repeat="item in data.banks"><a href={{item.url}}
+						target="_blank">{{item.name}}</a></li>
+					</ul>
+                </div>
+                
+			</div>
+
+			<div data-ng-show="isUtility">
+				<div class="subsection">
+					<!-- <h3 id="subsection">{{data.sectionHeaders[0]}}</h3> -->
+					<ul>
+						<li data-ng-repeat="item in data.utilities"><a href={{item.url}}
+						target="_blank">{{item.name}}</a></li>
+					</ul>
+                </div>
+			</div>
+			<div data-ng-show="isFrequent">
+				<div class="subsection">
+					<!-- <h3 id="subsection">{{data.sectionHeaders[0]}}</h3> -->
+					<ul>
+						<li data-ng-repeat="item in data.frequents"><a href={{item.url}}
+						target="_blank">{{item.name}}</a></li>
+					</ul>
+                </div>
+			</div>
+			<div data-ng-show="isOther">
+				<div class="subsection">
+					<!-- <h3 id="subsection">{{data.sectionHeaders[0]}}</h3> -->
+					<ul>
+						<li data-ng-repeat="item in data.others"><a href={{item.url}}
+						target="_blank">{{item.name}}</a></li>
+					</ul>
+                </div>
+			</div>
+		</div>
+
+		<div id="footer">2016 Copyright © YUHUAI WU</div>
+
+	</div>
+
+</body>
+
+</html>
