@@ -1,9 +1,8 @@
-var gpsApp = angular.module('gpsApp', [  ]);
-
+var gpsApp = angular.module('gpsApp', []);
 
 gpsApp.controller('gpsCtrl', [ '$scope', '$http', function($scope, $http) {
 
-	 $http.get('../json/gps.json').success(function(data) {
+	$http.get('../json/gps.json').success(function(data) {
 		$scope.data = data;
 		console.log($scope.data);
 	})
@@ -39,7 +38,6 @@ gpsApp.controller('gpsCtrl', [ '$scope', '$http', function($scope, $http) {
 		$scope.isTabThree = false;
 		$scope.isTabFour = true;
 	}
-
 
 
 } ]);
