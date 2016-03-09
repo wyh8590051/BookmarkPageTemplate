@@ -57,16 +57,6 @@
 	 color: blue;
  }
  
- .thought{
- 	/* border-style:solid;
- 	border-color: grey; */
- 	width:100%;
- 	height:auto;
- 	margin-top:20px;
- }
- #thought{
-	 margin-left:10px;
- }
  
  .navBar{
  	width:100%; 
@@ -137,17 +127,17 @@
     /* background-image:url(captain-jack-sparrow_12.jpg); */
 }
 
-.bankbg{
-	background-image:url(../img/bank.jpg);
+.tabOneBg{
+	background-image:url(../img/cascade-in-wood-scenery.jpg);
 }
-.utilitybg{
-	background-image:url(../img/night.png);
+.tabTwoBg{
+	background-image:url(../img/waterfall.jpg);
 }
-.frequentbg{
-	background-image:url(../img/lufei.jpg);
+.tabThreeBg{
+	background-image:url(../img/waterstone.jpg);
 }
-.otherbg{
-	background-image:url(../img/view.JPG);
+.tabFourBg{
+	background-image:url(../img/Forest-Scene.JPG);
 }
 
 a{
@@ -175,5 +165,9 @@ h3{
  
  .indent{
  text-indent: 10px;
+ }
+ 
+ .record{
+ margin-bottom: 20px;
  }
  

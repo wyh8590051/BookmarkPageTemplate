@@ -9,14 +9,14 @@
 	<script
 		src="script/angular.min.js"></script>
 	<script src="script/controller.js"></script>
-	<script src="script/xml2json.min.js"></script>
+	<!-- <script src="script/xml2json.min.js"></script>
 	<script src="script/angular-xml.min.js"></script>
 	<script src="script/angular-xml.js"></script>
-
-	<div data-ng-show="isBank" class="aside bankbg"></div>
-	<div data-ng-show="isUtility" class="aside utilitybg"></div>
-	<div data-ng-show="isFrequent" class="aside frequentbg"></div>
-	<div data-ng-show="isOther" class="aside otherbg"></div>
+ -->
+	<div data-ng-show="isTabOne" class="aside tabOneBg"></div>
+	<div data-ng-show="isTabTwo" class="aside tabTwoBg"></div>
+	<div data-ng-show="isTabThree" class="aside tabThreeBg"></div>
+	<div data-ng-show="isTabFour" class="aside tabFourBg"></div>
 	<div class="main">
 		<div id="header">
 			<!-- <h1 style="color: blue"">ROOKIE'S PLACE</h1> -->
@@ -24,17 +24,17 @@
 
 		<div id="nav">
 			<ul class="navBar">
-				<li data-ng-click="switchToBank()"><span data-ng-show="isBank"
-					class="on">{{data.tabs[0]}}</span><a data-ng-show="!isBank">{{data.tabs[0]}}</a></li>
-				<li data-ng-click="swtichToThought()"><span
-					data-ng-show="isUtility" class="on">{{data.tabs[1]}}</span><a
-					data-ng-show="!isUtility">{{data.tabs[1]}}</a></li>
-				<li data-ng-click="switchToFrequent()"><span
-					data-ng-show="isFrequent" class="on">{{data.tabs[2]}}</span><a
-					data-ng-show="!isFrequent">{{data.tabs[2]}}</a></li>
-				<li data-ng-click="switchToOther()"><span
-					data-ng-show="isOther" class="on">{{data.tabs[3]}}</span><a
-					data-ng-show="!isOther">{{data.tabs[3]}}</a></li>
+				<li data-ng-click="switchToTabOne()"><span data-ng-show="isTabOne"
+					class="on">{{data.tabs[0]}}</span><a data-ng-show="!isTabOne">{{data.tabs[0]}}</a></li>
+				<li data-ng-click="switchToTabTwo()"><span
+					data-ng-show="isTabTwo" class="on">{{data.tabs[1]}}</span><a
+					data-ng-show="!isTabTwo">{{data.tabs[1]}}</a></li>
+				<li data-ng-click="switchToTabThree()"><span
+					data-ng-show="isTabThree" class="on">{{data.tabs[2]}}</span><a
+					data-ng-show="!isTabThree">{{data.tabs[2]}}</a></li>
+				<li data-ng-click="switchToTabFour()"><span
+					data-ng-show="isTabFour" class="on">{{data.tabs[3]}}</span><a
+					data-ng-show="!isTabFour">{{data.tabs[3]}}</a></li>
 
 			</ul>
 			<div class="cate-bar">
@@ -44,19 +44,19 @@
 		</div>
 
 		<div id="section">
-			<div data-ng-show="isBank">
+			<div data-ng-show="isTabOne">
 
 				<div class="subsection">
 					<!-- <h3 id="subsection">{{data.sectionHeaders[0]}}</h3> -->
 					<ul>
-						<li data-ng-repeat="item in data.banks"><a href={{item.url}}
+						<li data-ng-repeat="item in data.banks" class="record"><a href={{item.url}}
 						target="_blank">{{item.name}}</a></li>
 					</ul>
                 </div>
                 
 			</div>
 
-			<div data-ng-show="isUtility">
+			<div data-ng-show="isTabTwo">
 				<div class="subsection">
 					<!-- <h3 id="subsection">{{data.sectionHeaders[0]}}</h3> -->
 					<ul>
@@ -65,7 +65,7 @@
 					</ul>
                 </div>
 			</div>
-			<div data-ng-show="isFrequent">
+			<div data-ng-show="isTabThree">
 				<div class="subsection">
 					<!-- <h3 id="subsection">{{data.sectionHeaders[0]}}</h3> -->
 					<ul>
@@ -74,7 +74,7 @@
 					</ul>
                 </div>
 			</div>
-			<div data-ng-show="isOther">
+			<div data-ng-show="isTabFour">
 				<div class="subsection">
 					<!-- <h3 id="subsection">{{data.sectionHeaders[0]}}</h3> -->
 					<ul>
@@ -85,7 +85,7 @@
 			</div>
 		</div>
 
-		<div id="footer">2016 Copyright © YUHUAI WU</div>
+		<!-- <div id="footer">2016 Copyright © YUHUAI WU</div> -->
 
 	</div>
 
