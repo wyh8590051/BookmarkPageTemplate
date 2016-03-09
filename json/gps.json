@@ -17,10 +17,9 @@
     
      
      "banks": [
-            {"name": "Bank of America",
-          "url": "https://secure.bankofamerica.com/login/sign-in/signOn.go"},
-         {"name": "Chase bank online",
-          "url": "https://chaseonline.chase.com/Logon.aspx"}
+    		      {"name": "Sample bank website",
+         	 	"url": "http://google.com"}
+            
      ],
       
       "utilities": [
